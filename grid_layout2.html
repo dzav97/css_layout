@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar CSS Grid box 2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196f3;
+            padding: 10px;
+            grid-template-columns: auto;
+        }
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div>Kesimpulan: Kode css tersebut membuat layout grid dengan container utama berwarna biru muda. 
+            Di dalam container tersebut, terdapat elemen "item1" yang membentang melewati dua kolom dan 
+            elemen lain dengan class "item" yang memiliki border, padding, ukuran font besar, dan teks rata tengah.</div>
+        <div>Kesimpulan Skenario 1:  karena adanya perubahan kode css tersebut class .item1 menimpa sebagian style bawaan dari class .item karena keduanya diterapkan pada elemen anak di dalam .grid-container.</div>
+        <div>
+            <p>Kesimpulan Skenario 2:</p>
+            <p>1. auto auto : Kode tersebut membuat layout grid dengan kontainer berwarna biru muda. Di dalamnya terdapat setidaknya dua item:
+            Item 1 yang membentang melewati dua kolom. Item lainnya yang kemungkinan posisinya diatur di tempat lain dan memiliki border serta font size yang lebih besar.</p>
+            <p>2. 70px 300px auto 40px: Kode tersebut membuat layout grid dengan 4 kolom. Kolom pertama dan keempat memiliki lebar tetap, sedangkan kolom kedua dan ketiga lebih fleksibel. 
+                Elemen dengan class .item1 membentang di dua kolom pertama, sedangkan elemen-elemen dengan class .item mengisi kolom lainnya secara terpisah. Semua elemen memiliki background putih transparan, border tipis, dan teks yang besar dan rata tengah.</p>
+            <p>3. 10px 500px 20px 10px: Kode tersebut membuat layout grid dengan area konten utama selebar 500px diapitkan oleh dua kolom sempit (10px). 
+                Di dalam layout grid terdapat elemen konten (.item) dan kemungkinan elemen konten khusus (.item1) yang membentang melewati dua kolom.</p>
+        </div>
+    </div>
+</body>
+</html>

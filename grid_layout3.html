@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar CSS Grid box 3</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196f3;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+        }
+        .item1 {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div>Kesimpulan: kode tersebut membuat container dengan layout grid (.grid-container) berwarna biru muda dengan jarak antar elemen. 
+            Di dalamnya, terdapat elemen-elemen dengan class item dan class item1 yang memiliki latar belakang putih transparan, border, padding, ukuran font besar, dan teks rata tengah.</div>
+        <div>Kesimpulan Skenario 1: kode tersebut membuat layout grid dengan 4 kolom. 
+            Elemen dengan class .item1 akan ditampilkan secara khusus dan membentang melewati 3 baris, sedangkan elemen-elemen dengan class .item akan mengisi kolom-kolom yang tersisa dan ditampilkan dengan gaya standar.</div>
+        <div>Kesimpulan Skenario 2: kode tersebut mengatur layout halaman web menggunakan Grid Layout. Terdapat wadah utama berwarna biru muda dengan jarak antar elemen 50px. 
+            Di dalam wadah tersebut, elemen .item1 membentang di 4 kolom, sedangkan elemen dengan kelas .item akan menempati 1 kolom. 
+            Kedua jenis elemen tersebut memiliki tampilan serupa dengan latar belakang putih transparan, border tipis, font size besar, dan teks rata tengah.</div>
+    </div>
+</body>
+</html>

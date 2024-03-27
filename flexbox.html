@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex{
+            display: flex;
+            background-color: aquamarine;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .wadah_flex div {
+            background-color: #2929;
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>Kesimpulan skenario 1 adalah: latar belakang berubah menjadi warna aquamarine</p>
+    <p>Kesimpulan skenario 2 adalah: mengatur warna latar belakang, margin, padding, dan ukuran font elemen pada div tersebut.</p>
+    <p>Kesimpulan skenario 3 adalah: elemen-elemen di dalam container .wadah_flex akan ditata secara berurutan dari atas ke bawah.</p>
+    <p>Kesimpulan skenario 4 adalah: elemen anaknya akan ditampilkan dalam satu baris, meskipun tidak muat, dan overflow akan terjadi.</p>
+    <p>Kesimpulan skenario 5 adalah: elemen anak yang dibungkus ke baris berikutnya jika tidak cukup ruang.</p>
+    <p>Kesimpulan skenario 6 adalah: elemen-elemen di dalamnya ditampilkan secara horizontal dan didistribusikan dengan jarak yang sama di antara elemen dan di tepi container.</p>
+</body>
+</html>
